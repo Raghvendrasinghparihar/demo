@@ -18,7 +18,7 @@ window.onload = function() {
     document.addEventListener("visibilitychange", function(e) {
         if (!document.hidden) {
             document.title = pageTitle;
-            favicon.href = "./assets/images/dp.png";
+            favicon.href = "./assets/images/htb.png";
         }
     });
 
