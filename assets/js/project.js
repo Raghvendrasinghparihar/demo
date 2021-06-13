@@ -29,7 +29,7 @@ const projects = [{
     },
     {
         title: "EmergenWeb",
-        cardImage: "assets/images/project-page/emergenweb2.png",
+        cardImage: "assets/images/project-page/emergen2.png",
         description: "EmergenWeb uses Different APIs that can be used in emergency sitution of corona pandemic.",
         tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
         Previewlink: "www.raghvendra.ml/Emergenweb",
