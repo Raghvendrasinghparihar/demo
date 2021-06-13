@@ -20,12 +20,12 @@ const projects = [{
         Githublink: "https://github.com/Raghvendra-user/Razor_News",
     },
     {
-        title: "Flappy Bird",
-        cardImage: "assets/images/project-page/flappybird.png",
-        description: "Flappy bird game built using React.js",
+        title: "Criminal Detector",
+        cardImage: "assets/images/project-page/Criminal.png",
+        description: "Criminal Detector made using Tkinter and OpenCV",
         tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
         Previewlink: "",
-        Githublink: "",
+        Githublink: "https://github.com/Raghvendra-user/Criminal_detector",
     },
 
 ];
