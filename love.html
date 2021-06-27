@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <link id="favicon" rel="shortcut icon" href="gfg.png" type="image/x-png" />
+
+    <!-- <script src="app.js"></script> -->
+    <title>Events</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            /* text-transform: capitalize; */
+            -webkit-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            font-family: 'Exo 2', sans-serif;
+        }
+        /*  */
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        a:hover {
+            text-decoration: none;
+            color: black;
+        }
+        
+        @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700);
+        body {
+            text-decoration: none;
+            margin: 0px;
+            padding: 0;
+            font-family: ubuntu;
+            /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+        }
+        /* Section 1 CSS */
+        
+        h1 {
+            z-index: 3;
+        }
+        
+        .landing {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10vw 0 10vw;
+            height: 100vh;
+        }
+        
+        .landingText h1 {
+            font-size: 3vw;
+            margin: 0 !important;
+        }
+        
+        .landingText h3 {
+            margin: 3px !important;
+            font-size: 20px;
+            opacity: 0.3;
+            line-height: 30px;
+        }
+        
+        .landingText .btn {
+            width: 120px;
+            margin-top: 30px;
+            padding: 14px 20px 14px 20px;
+            background-color: #2f8be0;
+            border-radius: 45px;
+            text-align: center;
+        }
+        
+        .landingText .btn a {
+            font-size: 1.2vw;
+            color: #fff;
+        }
+        
+        .landingImage img {
+            width: 50vw;
+            float: left;
+        }
+        
+        .landingImageContainer {
+            width: auto;
+            margin-right: 50%;
+            margin-right: -15%
+        }
+        /* events */
+        
+        .eventshead {
+            margin-bottom: -60px;
+            color: #2A8E47;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: underline;
+        }
+        
+        #event {
+            margin-top: 0rem;
+            padding-left: 0px;
+            display: flex;
+            /* padding-top: 20px; */
+            align-items: center;
+            /* min-height: 100vh; */
+            width: 100%;
+            height: auto;
+            /* background-image: url('main logo2.png'); */
+            background-image: cross-fade();
+            background-origin: content-box;
+            background-position: 150px;
+        }
+        
+        #event .heading {
+            font-size: 5rem;
+            padding-top: 5rem;
+            padding-left: 7rem;
+            margin: 0.2rem 0;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            color: white;
+        }
+        
+        #event .heading::after {
+            content: '';
+            position: absolute;
+            bottom: -1.5rem;
+            left: 49%;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+            height: 0.3rem;
+            width: 30%;
+            border-radius: 5rem;
+            background: white;
+        }
+        
+        #event .box-container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: initial;
+            -ms-flex-pack: center;
+            justify-content: space-evenly;
+            width: 100%;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-top: 5rem;
+        }
+        
+        #event .box-container .box {
+            height: 25rem;
+            width: 17rem;
+            border-radius: 0.5rem;
+            -webkit-box-shadow: 0 0 0rem #fff;
+            box-shadow: red;
+            margin: 1rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: column;
+            flex-flow: column;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        
+        #event .box-container .box img {
+            /* height: 75%; */
+            width: 100%;
+            -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
+            border-radius: 10%;
+        }
+        
+        #event .box-container .box p {
+            font-size: 1.3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #fff;
+            opacity: 0;
+            -webkit-transform: translateY(12rem);
+            transform: translateY(12rem);
+            padding: 0 0.4rem;
+        }
+        
+        #event .box-container .box:hover p {
+            color: black;
+            opacity: 1;
+            -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+        }
+        
+        #event .box-container .box:hover img {
+            margin-top: 20px;
+            height: 25%;
+            width: 40%;
+            -webkit-transform: translateY(-2rem);
+            transform: translateY(-2rem);
+        }
+        
+        #event .box-container .box:hover {
+            background: #d8d7d7;
+            color: black;
+        }
+        
+        @keyframes text {
+            0% {
+                color: black;
+                margin-bottom: -40px;
+            }
+            30% {
+                letter-spacing: 25px;
+                margin-bottom: -40px;
+            }
+            85% {
+                letter-spacing: 8px;
+                margin-bottom: -40px;
+            }
+        }
+        
+        .btn2 {
+            background-color: white;
+            border-radius: 8%;
+            position: relative;
+            width: 180px;
+            height: 60px;
+            margin-left: 32px;
+            margin-top: 30px;
+            /* margin: 20px; */
+            /* line-height: 60px; */
+            /* letter-spacing: 2px; */
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            /* color: whitesmoke; */
+            transition: 0.5s;
+            border: 1px solid #2A8E47;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn2:hover {
+            border: 1px solid transparent;
+            background: #2A8E47 url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+            transition-delay: 0.8s;
+            background-size: 180px;
+            animation: animate 0.7s steps(8) forwards;
+        }
+        
+        @keyframes animate {
+            0% {
+                background-position-y: 0;
+            }
+            100% {
+                background-position-y: -480px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            /* Section 1 */
+            .landing {
+                flex-direction: column-reverse;
+                height: 750px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .landingText h1 {
+                font-size: 6vw;
+                margin: 0 !important;
+            }
+            .landingText h1 span {
+                font-size: 3vh !important;
+            }
+            .landingText h3 {
+                font-size: 16px;
+            }
+            .landingText .btn {
+                margin: 0 auto;
+            }
+            .landingText .btn a {
+                font-size: 3vw;
+            }
+            .landingImage img {
+                width: 90vw;
+                margin-bottom: 20px;
+            }
+            .landingImageContainer {
+                width: auto;
+                margin-right: 50%"
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <div class="landing">
+        <div class="landingText" style="">
+            <h1 style="color: red; text-align: center">
+                Happy 2nd Anniversary ,<br />
+                <span style="color: pink; font-size: 3vw"> My Love </span> ❣
+            </h1>
+            <h3 style="color: black !important; text-align: center; opacity: 1">
+                So finally 2 saal complete ❣, congrats to both of us. Bhut time sath me bitaya hai , bhut kuch experience kra hai, pyaar ko feel kra hai, kisike sath hone pr kesa lgta hai yeh feel kra hai.
+                <h3 style="color: red !important; font-size: 30px ; text-align: center; opacity: 1">
+                    Love You So So So ... Much ❣</h3>
+
+                <h3 style="color: grey !important; text-align: center; opacity: 1"><br> Baaki niche photos pr click krke dekhle..
+                </h3>
+                <!-- <div class="btn">
+      </div> -->
+        </div>
+        <div class="landingImageContainer">
+            <div class="landingImage">
+                <img src="https://lh3.googleusercontent.com/proxy/X95Vez6SIGHMGUSY2BEPquNlBfImo40g-eMJSylAmF0LOhKw8PNJmbZkA_sirzuSK5T8oyy0xmJp8ifRnMRmBooCu8dLFZnutS_2qngr-rzISK2FDz7K" alt="" style="padding-right: 30px" />
+            </div>
+        </div>
+    </div>
+
+    <!-- events -->
+    <div class="eventshead">
+        <h1 style="color:red; font-family: sans-serif; font-size: 50px; font-weight: bold;margin-bottom: 70px;">
+            Love You💕
+        </h1>
+    </div>
+    <!-- Events -->
+    <section id="event">
+        <header style="width: 100%">
+            <div class="container h-100 d-flex" style="justify-content: center">
+                <div class="d-flex h-800 text-center align-items-center">
+                    <div class="w-1200 text-white">
+                        <div class="box-container">
+                            <div class="box">
+                                <img src="./love/1.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Tujh jesi pgl,moti ,caring, wonderful, beautiful, asto...😅, sweet , kind hearted, pyaari , sundar , sushil , nautanki , drama queen, budhu ...</p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/18.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    itni emotional, mujhse itna pyaar krne wali, mere liye sb kuch krne wali, mere liye har cheez krne wali, Mujhe preshaan krne wali, mera dhyan rakhne wali </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/3.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    mera gussa jhelne wali, mere sath hmesha rhene wali, hmesha sath Dene wali, mere liye rone wali , mere Hasne se Hasne wali, mere dukhi hone se dukhi hone wali,... </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/4.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    mujhpr sb qurban krne wali, mere liye Sabke oppose jaane wali , faltu kaam krne wali, itni hot, itni sexy, itni bewkoof , Mujhe khone ki baat sun kr hi Rone wali, .....bhut hai yrr bhut..❣ </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/5.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Teri har cheez se Mujhe pyaar hai bhut bhut jyada pyaar hai yrr In sbko chodkr kha jaunga , pgl me Toh itna kismat wala hu ki tujh jesi pgl; I mean itni achi soul mate mili...
+                                </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/6.jpeg" alt="" />
+
+                                <p style="text-align: start">
+
+                                    Tujh Pr Toh yrr sb qurban hai Koi nhi tere jesa literary kkkkoooooiiiii bhiiiii nhiiiii❣❣❣❣❣❣ U r unique, u r antique , u r mine and only and only and only and only mine </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/7.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Love u Meri baaachhhiiii, Meri sweetheart, Meri baby, Meri jaaneman , Meri pgl, Meri moti, Meri jaan❣❣❣❣❣😘😘😘😘😘😘😘😘😘😘😘 </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/8.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Thanks Meri zindagi me aane ke liye or Meri hi zindagi ban jaane ke liye... Har mod Pr tune Mujhe sambhala hai yrrr Har problem ka shi solution btaya hai
+                                </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/9.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    All the unforgettable memories with u are just priceless..... Vese baate chalu Toh just copy mangne se huyi thi...but baato baato me hi kuch esa Rishta ban gya hai which is can't be expressed but it can be feel, so just feel it😅😂 </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/10.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Bhut ldayi bhi Kri hai tujhse yrr but vo pyaar hi kiya Jisme ldayiya na ho...🤭🤭😉 ,Vo rishta hi ky jisme ek dusre ko samjha na jaaye...
+
+                                </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/11.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Only u show me the real meaning of true love💕🥰 Everyday U give me more reasons to love u💖 </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/12.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Sach Krunga tera har sapna Banaunga ek sundar Ghar apna Saath gujare ge hum raate Ek dusre ka sukh dukh hum baate Thode time baad hoge apne bacche Tere saath me bhi badlunga unke kache </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/13.jpeg" alt="" />
+
+                                <p style="text-align: start">
+
+                                    Tu pdkna uchka me udhau patang Holi Pr pyaar se lgayege ek dusre ko rang Dushere Pr saath me dekhege ravan Uske baad aayega diwali ka tyohar pavan Saath me Tu or me jlayege tu fuljhadiya Tere bday Pr launga gift bdiya bdiya
+                                </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/14.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    ESE hi nikal jayega apne saalo saal Hmesha bna rhunga me tumhari dhal Kbhi na aane dunga tum Pr khatra Hmesha jhelunga tera har nakhra Tu bolegi kapde dilao Me puri dukan khulwa dunga </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/15.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Tu bolegi picture dikhao Me home theater laa dunga Tu bolegi Paris dikhao Me world tour kra dunga Tu bolegi maike Chod aao Me apna muh fula lunga </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/16.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Teri aankho me khona chahta hu me Har dum tere labo Pr rhena chahta hu me Hmesha tujhse Baate krna chahta hu me Apni zindagi ka har pal tere sath bitana chahta hu me </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/17.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Jis pal Tu na ho us lamhe ko bhulna chahta hu me Tere ghunrale baalo se khelna chahta hu me Har samay tujhme dhyan lgana chahta hu me Teri saheliyo ko jijaji bolte huye sunna chahta hu me </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/18.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Mere dosto ko tujhe bhabhi bulwana chahta hu me Tere sath har lamhe ko yaadgaar bnana chahta hu me Tere sath ek alg choti si duniya me rhena chahta hu me Tujhe har khatre se bachana chahta hu me </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/19.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Tujhe Sirf mere sath Dekhna chahta hu me Tujhse dil ke har raaz khehna chahta hu me Apne bacho ko tujhe pyaar se mummy bulate sunna chahta hu me Tujhe har dum apni bhaho me chupana chahta hu me </p>
+                            </div>
+                            <div class="box">
+                                <img src="./love/20.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    Tere hootho ka ras pina chahta hu me Tujhse bepanha pyaar krna chahta hu me Saari haade tod kr tujhe hmesha ke liye apna bnana chahta hu me Tere sath or Sirf or sirf tere sath apni bachi huyi saanse lena chahta hu me...❣ </p>
+                            </div>
+
+                            <div class="box">
+                                <img src="./love/22.jpeg" alt="" />
+
+                                <p style="text-align: start">
+                                    <br>Love you!!! ❣❣❣❣</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <div class="eventshead">
+        <h1 style="color:red; font-family: sans-serif; font-size: 50px; font-weight: bold;margin-bottom: 70px;">
+            Love You💕
+        </h1>
+    </div>
+    <!-- Footer -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+
+</html>
