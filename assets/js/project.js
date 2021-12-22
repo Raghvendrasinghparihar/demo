@@ -4,7 +4,7 @@ const projectcards = document.querySelector(".projectcards");
 
 // Array of object for projects
 const projects = [{
-        title: "Rachat - Chatting Application",
+        title: "Rachat",
         cardImage: "assets/images/project-page/Rachat.png",
         description: "A Chatting app built using React.",
         tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
@@ -24,7 +24,6 @@ const projects = [{
         cardImage: "assets/images/project-page/Criminal.png",
         description: "Criminal Detector made using Tkinter and OpenCV",
         tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
-        Previewlink: "https://www.raghvendra.ml/Emergenweb",
         Githublink: "https://github.com/Raghvendra-user/Criminal_detector",
     },
     {
