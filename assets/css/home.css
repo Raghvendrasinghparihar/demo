@@ -554,7 +554,7 @@ a:hover {
 
 @media only screen and (min-height:768px) {
     .text {
-        margin-top: -4rem;
+        margin-top: 4rem;
     }
 }
 
