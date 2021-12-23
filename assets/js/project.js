@@ -35,6 +35,14 @@ const projects = [{
         Previewlink: "Emergenweb",
         Githublink: "https://github.com/Raghvendra-user/Emergenweb",
     },
+    {
+        title: "Space Invaders",
+        cardImage: "assets/images/project-page/Space.png",
+        description: "Space Invaders game built using Pygame.",
+        tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+        Previewlink: "",
+        Githublink: "https://github.com/Raghvendra-user/Space-Invaders",
+    }
 
 ];
 
