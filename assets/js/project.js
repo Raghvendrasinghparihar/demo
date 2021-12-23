@@ -24,6 +24,7 @@ const projects = [{
         cardImage: "assets/images/project-page/Criminal.png",
         description: "Criminal Detector made using Tkinter and OpenCV",
         tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+        Previewlink: "",
         Githublink: "https://github.com/Raghvendra-user/Criminal_detector",
     },
     {
